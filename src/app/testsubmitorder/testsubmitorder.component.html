@@ -1,0 +1,18 @@
+<p>testsubmitorder works!</p>
+<form [formGroup]="orderForm" (ngSubmit)="save()">
+    <input type ="text"  
+    class="form-control"
+     id="name"
+      formControlName="name" 
+      ngModel placeholder="name">
+      <br><br>
+    <input type ="text"  class="form-control" id="id" formControlName="id" ngModel placeholder="id"><br><br>
+    <input type ="text" class="form-control" id="type" formControlName="type" ngModel placeholder="type"><br><br>
+    <input type ="text"  class="form-control" id="capasity" formControlName="capasity" ngModel placeholder="capasity"><br><br>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+  <div>
+    <div >{{ preview }}</div>
+  </div>

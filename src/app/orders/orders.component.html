@@ -1,0 +1,31 @@
+<p>orders works!</p>
+<div class="generic-container">
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="row">
+        <h2>List of order</h2>
+      </div>
+      <div class="panel-heading"><span class="lead">List of order</span>
+      </div>
+      <div class="tablecontainer">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>order Id</th>
+            <th>Type</th>
+            <th>Capacity</th>
+            
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let order of orders">
+            <td><span>{{order.Id}}</span></td>
+            <td><span>{{order.type}}</span></td>
+            <td><span>{{order.capacity}}</span></td>
+          
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
